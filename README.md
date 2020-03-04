@@ -10,7 +10,7 @@ You can spawn more workers just by scaling the app
 
     | Env Var   | Description                                                  |
     | --- | --- |
-    | CF_CLI_URL | The download url of binary version (linux x64) from [CF CLI Releases](https://github.com/cloudfoundry/cli/releases). If not provided, default [v6.49.0](https://packages.cloudfoundry.org/stable?release=linux64-binary&version=6.49.0&source=github-rel) will be used |
+    | CF_CLI_URL | The download url of binary version (linux x64) from [CF CLI Releases](https://github.com/cloudfoundry/cli/releases), must be in `tgz` format only. If not provided, default [v6.49.0](https://packages.cloudfoundry.org/stable?release=linux64-binary&version=6.49.0&source=github-rel) will be used |
     | AZP_URL | The URL of the Azure DevOps or Azure DevOps Server instance. Usually https://dev.azure.com/<ORG_NAME> |
     | AZP_TOKEN | Personal Access Token (PAT) granting access to `AZP_URL`. [Instructions on how to make one](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page). Should have scopes Agent Pools: Read & manage |
     | AZP_POOL | Agent pool name (default value: `Default`) |
