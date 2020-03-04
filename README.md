@@ -1,10 +1,10 @@
-Deploy Azure DevOps agents as container apps on to Cloud Foundry
+## Deploy Azure DevOps agents as container apps on to Cloud Foundry
 
 This helps solve the issue of pushing to private installation of Cloud Foundry with no public API endpoints. Instead, the model used is to push Azure DevOps worker agent on to CF itself and register them as a worker pool in Azure DevOps to be used as part of push steps in the pipeline. These connect to Azure DevOps control plane and receive worker instructions to push apps. Note that these agents only have `cf` CLI and lack most of tooling to execute common worker tasks, so they should be restricted to be used only for stages of the pipeline that do `cf push`
 
 You can spawn more workers just by scaling the app
 
-## Usage Instructions
+### Usage Instructions
 
 1. Adjust the manifest environmental variables based on the info below
 
